@@ -14,7 +14,9 @@ protocol dataSecondVC {
 
 class FirstVC: UIViewController, dataSecondVC {
     func getData(myData: [String]) {
-        <#code#>
+        nameLabel.text = myData[0]
+        surnameLabel.text = myData[1]
+        birthdayLabel.text = myData[2]
     }
     
     
