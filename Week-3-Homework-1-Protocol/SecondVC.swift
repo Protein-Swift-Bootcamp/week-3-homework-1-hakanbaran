@@ -20,6 +20,7 @@ class SecondVC: UIViewController {
     }
     
     @IBAction func saveClicked(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     
