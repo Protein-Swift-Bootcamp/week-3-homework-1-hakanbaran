@@ -24,6 +24,13 @@ class FirstVC: UIViewController {
     }
     
     @objc func getData( myData : Notification) {
+        
+        if let data = myData.userInfo as? [String : String] {
+            nameLabel.text = data["name"]
+            surnameLabel.text = data["surname"]
+            birthdayLabel.text = data["birthday"]
+        }
+        
     }
     
     
