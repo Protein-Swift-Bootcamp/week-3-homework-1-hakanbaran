@@ -15,6 +15,8 @@ class SecondVC: UIViewController {
     @IBOutlet weak var surnameText: UITextField!
     @IBOutlet weak var birthdayText: UITextField!
     
+    var dataArray : [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,10 @@ class SecondVC: UIViewController {
     
 
     @IBAction func saveClicked(_ sender: Any) {
+        
+        dataArray.append(nameText.text!)
+        dataArray.append(surnameText.text!)
+        dataArray.append(birthdayText.text!)
         
         dismiss(animated: true)
     }
