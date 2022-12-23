@@ -9,6 +9,8 @@ import UIKit
 
 class SecondVC: UIViewController {
     
+    var secondVcClosureDataBack:(([String]) -> ())?
+    
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var surnameText: UITextField!
     @IBOutlet weak var birthdayText: UITextField!
