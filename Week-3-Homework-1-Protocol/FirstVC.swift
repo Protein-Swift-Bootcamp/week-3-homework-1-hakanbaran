@@ -12,7 +12,11 @@ protocol dataSecondVC {
     func getData(myData: [String])
 }
 
-class FirstVC: UIViewController {
+class FirstVC: UIViewController, dataSecondVC {
+    func getData(myData: [String]) {
+        <#code#>
+    }
+    
     
     
     @IBOutlet weak var nameLabel: UILabel!
