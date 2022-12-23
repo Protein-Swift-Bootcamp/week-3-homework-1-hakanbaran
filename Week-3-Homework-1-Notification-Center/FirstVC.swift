@@ -19,11 +19,11 @@ class FirstVC: UIViewController {
         super.viewDidLoad()
         
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(getData), name: .notificationFirstVC, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(getData(myData:)), name: .notificationFirstVC, object: nil)
         
     }
     
-    @objc func getData() {
+    @objc func getData( myData : Notification) {
     }
     
     
