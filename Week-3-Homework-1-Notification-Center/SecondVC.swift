@@ -14,6 +14,7 @@ class SecondVC: UIViewController {
     @IBOutlet weak var birthdayText: UITextField!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +23,10 @@ class SecondVC: UIViewController {
     
 
     @IBAction func saveButtonClicked(_ sender: Any) {
+        
+        let dataArray = ["name": nameText.text!, "surname" : surnameText.text!, "birthday" : birthdayText.text!]
+        
+        NotificationCenter.default.post(name: .notificationFirstVC, object: nil, userInfo: dataArray)
         
         dismiss(animated: true)
     }
