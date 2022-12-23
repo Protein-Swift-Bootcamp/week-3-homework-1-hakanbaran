@@ -29,6 +29,8 @@ class SecondVC: UIViewController {
         dataArray.append(surnameText.text!)
         dataArray.append(birthdayText.text!)
         
+        secondVcClosureDataBack?(dataArray)
+        
         dismiss(animated: true)
     }
     
