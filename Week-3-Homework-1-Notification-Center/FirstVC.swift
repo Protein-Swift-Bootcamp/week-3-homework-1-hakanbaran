@@ -28,3 +28,10 @@ class FirstVC: UIViewController {
 }
 
 
+extension Notification.Name{
+    static let notificationFirstVC = Notification.Name(rawValue: "NotificationFirstVC")
+}
+
+
+
+
