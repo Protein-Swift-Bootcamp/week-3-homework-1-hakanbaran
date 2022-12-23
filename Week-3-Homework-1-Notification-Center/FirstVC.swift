@@ -18,7 +18,12 @@ class FirstVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(getData), name: .notificationFirstVC, object: nil)
         
+    }
+    
+    @objc func getData() {
     }
     
     
