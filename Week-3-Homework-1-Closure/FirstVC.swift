@@ -19,6 +19,8 @@ class FirstVC: UIViewController {
     }
 
     @IBAction func changeClicked(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toSecondVC", sender: nil)
     }
     
 }

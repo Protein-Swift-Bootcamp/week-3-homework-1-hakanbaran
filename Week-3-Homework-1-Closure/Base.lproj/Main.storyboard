@@ -77,6 +77,7 @@
                         <outlet property="birthdayLabel" destination="9FK-ct-SF9" id="JOg-BY-KhL"/>
                         <outlet property="nameLabel" destination="3gu-dB-023" id="2XN-l9-azC"/>
                         <outlet property="surnameLabel" destination="OUn-Iw-c4g" id="lsf-a1-fOZ"/>
+                        <segue destination="Hgx-We-eMX" kind="presentation" identifier="toSecondVC" modalPresentationStyle="fullScreen" id="H02-hp-AWo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -143,6 +144,7 @@
                             <constraint firstItem="vhg-22-pur" firstAttribute="centerX" secondItem="0RP-L2-lK2" secondAttribute="centerX" id="mkM-3a-qt4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5Aa-Qd-DAp"/>
                     <connections>
                         <outlet property="birthdayText" destination="vhg-22-pur" id="Wla-9D-RNE"/>
                         <outlet property="nameText" destination="T6E-2V-PkM" id="mOt-5b-PoV"/>
