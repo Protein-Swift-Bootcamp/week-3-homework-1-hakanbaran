@@ -8,6 +8,8 @@
 import UIKit
 
 class SecondVC: UIViewController {
+    
+    var delegateSecondVC : dataSecondVC?
 
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var surnameText: UITextField!
