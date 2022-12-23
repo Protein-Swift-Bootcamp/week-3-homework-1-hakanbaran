@@ -23,5 +23,18 @@ class FirstVC: UIViewController {
         performSegue(withIdentifier: "toSecondVC", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SecondVC {
+            
+            destination.secondVcClosureDataBack = { dataArray in
+                self.nameLabel.text = dataArray[0]
+                self.surnameLabel.text = dataArray[1]
+                self.birthdayLabel.text = dataArray[2]
+                
+            }
+        }
+    }
+    
+    
 }
 
