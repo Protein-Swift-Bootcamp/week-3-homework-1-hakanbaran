@@ -7,6 +7,11 @@
 
 import UIKit
 
+
+protocol dataSecondVC {
+    func getData(myData: [String])
+}
+
 class FirstVC: UIViewController {
     
     
