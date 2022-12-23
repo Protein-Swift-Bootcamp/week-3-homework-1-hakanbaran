@@ -30,6 +30,8 @@ class SecondVC: UIViewController {
         dataArray.append(birthdayText.text!)
         
         
+        self.delegateSecondVC?.getData(myData: dataArray)
+        
         
         dismiss(animated: true)
     }
