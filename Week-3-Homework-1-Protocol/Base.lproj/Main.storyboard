@@ -72,6 +72,7 @@
                         <outlet property="birthdayLabel" destination="oca-IT-fiB" id="YzF-Kl-Xv7"/>
                         <outlet property="nameLabel" destination="FlU-ig-3n2" id="pRo-Rh-LcH"/>
                         <outlet property="surnameLabel" destination="NVj-mV-kBP" id="cKD-eF-xWd"/>
+                        <segue destination="lP4-pP-avE" kind="presentation" identifier="toSecondVC" modalPresentationStyle="fullScreen" id="YRb-Ek-0A3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -128,6 +129,7 @@
                             <constraint firstItem="0F7-gz-0rX" firstAttribute="centerY" secondItem="iGr-ex-mxa" secondAttribute="centerY" id="ylK-Lk-yLC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="CWk-e5-soX"/>
                     <connections>
                         <outlet property="birthdayText" destination="WnH-7b-Zw4" id="ldt-1Y-IbY"/>
                         <outlet property="nameText" destination="f6O-pz-peI" id="G66-Sa-c7j"/>
